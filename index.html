@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html lang="ha">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.json">
-    <title>AI a Rayuwar Yau da Kullum</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-        }
-        section {
-            background: white;
-            padding: 20px;
-            margin-top: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #007bff;
-        }
-        ul {
-            line-height: 1.8;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <title>AI a Rayuwar Yau da Kullum</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 15px; background-color: #f4f4f9; color: #333; }
+    .header { background-color: #007bff; color: white; padding: 20px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
+    .download-btn { display: block; width: 100%; text-align: center; padding: 12px; background-color: #28a745; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin-bottom: 20px; box-sizing: border-box; }
+    .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px; cursor: pointer; }
+    .card h3 { margin-top: 0; color: #007bff; }
+    .content { display: none; margin-top: 10px; line-height: 1.6; border-top: 1px solid #eee; padding-top: 10px; }
+    .active .content { display: block; }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>AI a Rayuwar Yau da Kullum</h1>
-        <p>Barka da zuwa manhajar ilimantarwa ta AI!</p>
-    </header>
+  <div class="header">
+    <h1>AI a Rayuwar Yau da Kullum</h1>
+    <p>Barka da zuwa manhajar ilimantarwa ta AI!</p>
+  </div>
 
-    <section>
-        <h2>Menene Basirar Dattako (AI)?</h2>
-        <p>Artificial Intelligence (AI) wata fasaha ce da ke koya wa kwamfuta ko waya yin tunani da warware matsaloli kamar ɗan adam.</p>
-    </section>
+  <a href="littafi.pdf" download class="download-btn">
+    📥 Sauke Cikakken Littafin (PDF)
+  </a>
 
-    <section>
-        <h2>Ayyukan AI a Rayuwa</h2>
-        <ul>
-            <li><strong>Neman Ilimi:</strong> Taimakawa ɗalibai wajen bincike da fassarar harsuna.</li>
-            <li><strong>Kiyaye Lafiya:</strong> Taimakon likitoci wajen gano cututtuka cikin sauri.</li>
-            <li><strong>Kasuwanci:</strong> Amsa tambayoyin abokan ciniki ta atomatik.</li>
-        </ul>
-    </section>
+  <!-- BABI NA 1 -->
+  <div class="card" onclick="toggleChapter(this)">
+    <h3>Babi na 1: Menene Kirkirarriyar Basira (AI)?</h3>
+    <p><i>Danna nan don karantawa...</i></p>
+    <div class="content">
+      <p>Manna rubutun Babi na 1 daga PDF din ka a nan...</p>
+    </div>
+  </div>
+
+  <!-- BABI NA 2 -->
+  <div class="card" onclick="toggleChapter(this)">
+    <h3>Babi na 2: AI wajen Koyo da Karatu</h3>
+    <p><i>Danna nan don karantawa...</i></p>
+    <div class="content">
+      <p>Manna rubutun Babi na 2 daga PDF din ka a nan...</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleChapter(element) {
+      element.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>
